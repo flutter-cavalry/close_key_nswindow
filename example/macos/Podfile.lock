@@ -1,0 +1,22 @@
+PODS:
+  - close_key_nswindow (0.0.1):
+    - FlutterMacOS
+  - FlutterMacOS (1.0.0)
+
+DEPENDENCIES:
+  - close_key_nswindow (from `Flutter/ephemeral/.symlinks/plugins/close_key_nswindow/macos`)
+  - FlutterMacOS (from `Flutter/ephemeral`)
+
+EXTERNAL SOURCES:
+  close_key_nswindow:
+    :path: Flutter/ephemeral/.symlinks/plugins/close_key_nswindow/macos
+  FlutterMacOS:
+    :path: Flutter/ephemeral
+
+SPEC CHECKSUMS:
+  close_key_nswindow: 3922d08b0b148273f2f6044c9e1576b1cd092914
+  FlutterMacOS: 8f6f14fa908a6fb3fba0cd85dbd81ec4b251fb24
+
+PODFILE CHECKSUM: 353c8bcc5d5b0994e508d035b5431cfe18c1dea7
+
+COCOAPODS: 1.11.3
