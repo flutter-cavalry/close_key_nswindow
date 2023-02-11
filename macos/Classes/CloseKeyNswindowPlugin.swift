@@ -10,8 +10,11 @@ public class CloseKeyNswindowPlugin: NSObject, FlutterPlugin {
 
   public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
     switch call.method {
-    case "closeKeyWindow":
+    case "close":
       NSApplication.shared.keyWindow?.close()
+      result(nil)
+    case "performClose":
+      NSApplication.shared.keyWindow?.performClose(self)
       result(nil)
     default:
       result(FlutterMethodNotImplemented)

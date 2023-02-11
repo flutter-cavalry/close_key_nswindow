@@ -23,7 +23,11 @@ abstract class CloseKeyNswindowPlatform extends PlatformInterface {
     _instance = instance;
   }
 
-  Future<void> closeKeyWindow() {
-    throw UnimplementedError('closeKeyWindow() has not been implemented.');
+  Future<void> close() {
+    throw UnimplementedError('close() has not been implemented.');
+  }
+
+  Future<void> performClose() {
+    throw UnimplementedError('performClose() has not been implemented.');
   }
 }

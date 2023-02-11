@@ -2,11 +2,15 @@
 
 # close_key_nswindow
 
-Call `NSApplication.shared.keyWindow?.close()`.
+Call `close` or `performClose` on key `NSWindow`.
 
 ## Usage
 
 ```dart
 final plugin = CloseKeyNswindow();
-await plugin.closeKeyWindow();
+
+// `NSApplication.shared.keyWindow?.close()`.
+await plugin.close();
+// `NSApplication.shared.keyWindow?.performClose()`.
+await plugin.performClose();
 ```

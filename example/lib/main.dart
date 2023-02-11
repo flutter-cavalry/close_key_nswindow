@@ -22,10 +22,18 @@ class _MyAppState extends State<MyApp> {
         appBar: AppBar(
           title: const Text('Plugin example app'),
         ),
-        body: Center(
-          child: OutlinedButton(
-              onPressed: () => _closeKeyNswindowPlugin.closeKeyWindow(),
-              child: const Text('Close key window')),
+        body: Container(
+          padding: const EdgeInsets.all(20),
+          child: Column(
+            children: [
+              OutlinedButton(
+                  onPressed: () => _closeKeyNswindowPlugin.close(),
+                  child: const Text('close')),
+              OutlinedButton(
+                  onPressed: () => _closeKeyNswindowPlugin.performClose(),
+                  child: const Text('performClose')),
+            ],
+          ),
         ),
       ),
     );

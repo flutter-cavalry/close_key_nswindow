@@ -1,6 +1,6 @@
 name: close_key_nswindow
-description: Call `NSApplication.shared.keyWindow?.close()`.
-version: 0.0.1
+description: Call `close` or `performClose` on key `NSWindow`.
+version: 1.0.0
 homepage: https://github.com/flutter-cavalry/close_key_nswindow
 
 environment:

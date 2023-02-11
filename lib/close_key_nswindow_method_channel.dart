@@ -10,7 +10,12 @@ class MethodChannelCloseKeyNswindow extends CloseKeyNswindowPlatform {
   final methodChannel = const MethodChannel('close_key_nswindow');
 
   @override
-  Future<void> closeKeyWindow() async {
-    await methodChannel.invokeMethod<String>('closeKeyWindow');
+  Future<void> close() async {
+    await methodChannel.invokeMethod<String>('close');
+  }
+
+  @override
+  Future<void> performClose() async {
+    await methodChannel.invokeMethod<String>('performClose');
   }
 }
